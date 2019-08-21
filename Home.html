@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/auto.css" />
+</head>
+
+
+<body>
+    <div class="grid-container">
+
+        <div class="item1">
+            <h1>To-Do</h1>
+        </div>
+
+        <div class="item2">
+            <button class="tablinks" onclick="openTab(event, 'todo')">To-Do</button>
+            <button class="tablinks" onclick="openTab(event, 'about')">About</button>
+        </div>
+
+        <div class="item3">
+            <div id="todo" class="tabcontent">
+                <div class="card">
+                    <div class="todo-header">
+                        <h1>To-Do List</h1>
+                        <div>
+                            <input id="input-text" class="input" type="text" placeholder="To-Do" onkeypress="onEnter(event)">
+                            <button onclick="addTask()" class="addBtn">+</button>
+                        </div>
+                    </div>
+                    <ul id="todos" class="todos">
+                        <li>
+                            <div class="li">
+                                <span class="text">
+                                    Task 1
+                                </span> 
+                                <span class="buttons">
+                                    <span class="button" onclick="deleteTask(event)">
+                                        <img src="images/delete.png"/>
+                                    </span> 
+                                </span> 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li">
+                                <span class="text">
+                                    Task 2
+                                </span>
+                                <span class="buttons">
+                                    <span class="button" onclick="deleteTask(event)">
+                                        <img src="images/delete.png"/>
+                                    </span> 
+                                </span> 
+                            </div>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="item4">
+            Copyright Vikesh
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/auto.js"></script>
+
+</body>
+
+</html>
